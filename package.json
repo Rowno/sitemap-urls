@@ -1,0 +1,30 @@
+{
+  "name": "sitemap-urls",
+  "version": "0.1.0",
+  "description": "Extract URLs from an XML sitemap.",
+  "author": "Roland Warmerdam (https://rolandwarmerdam.co.nz)",
+  "keywords": [],
+  "repository": "Rowno/sitemap-urls",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-mocha-cli": "^1.8.0",
+    "jshint-stylish": "^1.0.0",
+    "load-grunt-tasks": "^2.0.0",
+    "time-grunt": "^1.0.0"
+  },
+  "files": [
+    "lib"
+  ],
+  "private": true
+}
