@@ -1,9 +1,9 @@
 {
   "name": "sitemap-urls",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Extract URLs from an XML sitemap.",
   "author": "Roland Warmerdam (https://rolandwarmerdam.co.nz)",
-  "keywords": [],
+  "keywords": ["sitemap", "url", "parse", "extract"],
   "repository": "Rowno/sitemap-urls",
   "license": "MIT",
   "main": "lib/index.js",
@@ -33,6 +33,5 @@
   },
   "files": [
     "lib"
-  ],
-  "private": true
+  ]
 }
