@@ -7,6 +7,9 @@
   "repository": "Rowno/sitemap-urls",
   "license": "MIT",
   "main": "lib/index.js",
+  "bin": {
+    "sitemap-urls": "lib/cli.js"
+  },
   "scripts": {
     "test": "grunt test"
   },
@@ -14,7 +17,10 @@
     "node": ">=0.10.0"
   },
   "dependencies": {
-    "cheerio": "^0.18.0"
+    "cheerio": "^0.18.0",
+    "get-stdin": "^4.0.1",
+    "meow": "^3.0.0",
+    "update-notifier": "^0.3.0"
   },
   "devDependencies": {
     "chai": "^1.9.1",
