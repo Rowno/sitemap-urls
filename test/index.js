@@ -3,14 +3,17 @@
 
 var expect = require('chai').expect;
 var fs = require('fs');
-var index = require('../lib/index');
+var sitemapUrls = require('../');
 
 
 describe('index', function () {
-    it('.version should match package.json version', function () {
-        var packageJson = fs.readFileSync(__dirname + '/../package.json', 'utf8');
+    describe('#extractUrls', function () {
+        it('should extract all urls', function () {
+            var fixtureXml = fs.readFileSync(__dirname + '/fixtures/sitemap.xml', 'utf8');
+            var fixtureUrls = require('./fixtures/urls.json');
+            var urls = sitemapUrls.extractUrls(fixtureXml);
 
-        packageJson = JSON.parse(packageJson);
-        expect(index.version).to.equal(packageJson.version);
+            expect(urls).to.have.members(fixtureUrls);
+        });
     });
 });
