@@ -59,8 +59,18 @@ Example result:
 ```
 
 
+Related
+-------
+
+ - [medic][] - Perform bulk URL status checks and track changes.
+
+
 License
 -------
 Sitemap Urls is released under the MIT license.
 
 Copyright © 2015 Roland Warmerdam.
+
+
+
+[medic]: https://github.com/Rowno/medic
