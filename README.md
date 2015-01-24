@@ -6,6 +6,8 @@
 
 Extract URLs from an XML sitemap.
 
+![Sitemap Urls screenshot](screenshot.png)
+
 
 Getting Started
 ---------------
