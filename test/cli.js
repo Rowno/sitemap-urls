@@ -1,13 +1,13 @@
-/*jshint expr:true */
 'use strict';
 var path = require('path');
 var fs = require('fs');
 var exec = require('child_process').exec;
 var expect = require('chai').expect;
+var fixtureUrls = require('./fixtures/urls.json');
 
 var CLI = path.resolve(require('../package.json').bin['sitemap-urls']);
 var SITEMAP_FILE = path.join(__dirname, 'fixtures/sitemap.xml');
-var FIXTURE_OUTPUT = require('./fixtures/urls.json').join('\n') + '\n';
+var FIXTURE_OUTPUT = fixtureUrls.join('\n') + '\n';
 
 
 describe('cli', function () {
@@ -15,7 +15,7 @@ describe('cli', function () {
 
         var child = exec(
             CLI + ' ' + SITEMAP_FILE,
-            {cwd:__dirname},
+            { cwd: __dirname },
             function (error, stdout, stderr) {
                 if (error) {
                     return done(error);
@@ -33,7 +33,7 @@ describe('cli', function () {
     it('should extract urls from stdin', function (done) {
         var child = exec(
             CLI,
-            {cwd:__dirname},
+            { cwd: __dirname },
             function (error, stdout, stderr) {
                 if (error) {
                     return done(error);
@@ -45,6 +45,6 @@ describe('cli', function () {
             }
         );
 
-        fs.createReadStream(SITEMAP_FILE, {encoding:'utf8'}).pipe(child.stdin);
+        fs.createReadStream(SITEMAP_FILE, { encoding: 'utf8' }).pipe(child.stdin);
     });
 });
