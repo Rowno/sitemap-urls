@@ -1,9 +1,13 @@
-Usage: sitemap-urls <path> [<options>]
+Usage: sitemap-urls <path>|<url> [<options>]
 
-Path:
-    Path to a file containing an XML sitemap.
+Path or Url:
+    Url or Path to a file containing an XML sitemap
+    Additional sitemaps referenced from the main sitemap.xml file
+    are fetched via their URL.
+
     This parameter is ignored when the sitemap is being piped.
 
 Options:
     -h, --help      Show this help text.
     -v, --version   Print sitemap-urls' version.
+    -t, --timeout   Connection timeout (ms)
