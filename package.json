@@ -16,7 +16,7 @@
     "sitemap-urls": "lib/cli.js"
   },
   "scripts": {
-    "test": "jest && xo"
+    "test": "jest --ci && xo"
   },
   "engines": {
     "node": ">=4"
