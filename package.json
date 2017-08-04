@@ -16,7 +16,8 @@
     "sitemap-urls": "lib/cli.js"
   },
   "scripts": {
-    "test": "jest --ci && xo"
+    "test": "jest --ci && xo",
+    "precommit": "lint-staged"
   },
   "engines": {
     "node": ">=4"
@@ -29,7 +30,9 @@
   },
   "devDependencies": {
     "chai": "^4.1.0",
+    "husky": "^0.14.3",
     "jest": "^20.0.4",
+    "lint-staged": "^4.0.2",
     "xo": "^0.18.2"
   },
   "files": [
@@ -41,8 +44,16 @@
     "overrides": [
       {
         "files": "**/__tests__/**/*.js",
-        "envs": ["jest"]
+        "envs": [
+          "jest"
+        ]
       }
+    ]
+  },
+  "lint-staged": {
+    "*.js": [
+      "xo --fix",
+      "git add"
     ]
   }
 }
