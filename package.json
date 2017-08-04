@@ -16,7 +16,7 @@
     "sitemap-urls": "lib/cli.js"
   },
   "scripts": {
-    "test": "mocha && xo"
+    "test": "jest && xo"
   },
   "engines": {
     "node": ">=4"
@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "chai": "^4.1.0",
-    "mocha": "^3.5.0",
+    "jest": "^20.0.4",
     "xo": "^0.18.2"
   },
   "files": [
@@ -40,11 +40,8 @@
     "semicolon": false,
     "overrides": [
       {
-        "files": "test/*.js",
-        "globals": [
-          "describe",
-          "it"
-        ]
+        "files": "**/__tests__/**/*.js",
+        "envs": ["jest"]
       }
     ]
   }
