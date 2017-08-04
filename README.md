@@ -14,6 +14,8 @@ Getting Started
 Install the Sitemap Urls command line tool:
 ```bash
 npm install -g sitemap-urls
+# or
+yarn add -g sitemap-urls
 ```
 
 Run `sitemap-urls` on a file containing a sitemap:

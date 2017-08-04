@@ -1,8 +1,10 @@
-sudo: false
 language: node_js
 node_js:
-    - "5"
-    - "4"
-    - "0.12"
-before_script:
-    - npm install -g grunt-cli
+  - "0.12"
+  - "4"
+  - "6"
+  - "8"
+cache:
+  yarn: true
+  directories:
+    - node_modules
