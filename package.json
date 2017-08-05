@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "chai": "^4.1.0",
+    "execa": "^0.7.0",
     "husky": "^0.14.3",
     "jest": "^20.0.4",
     "lint-staged": "^4.0.2",
