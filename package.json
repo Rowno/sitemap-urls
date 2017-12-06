@@ -25,14 +25,14 @@
   "dependencies": {
     "cheerio": "0.22.0",
     "get-stdin": "^5.0.0",
-    "meow": "^3.0.0",
+    "meow": "^4.0.0",
     "update-notifier": "^2.2.0"
   },
   "devDependencies": {
-    "execa": "^0.7.0",
+    "execa": "^0.8.0",
     "husky": "^0.14.3",
-    "jest": "^20.0.4",
-    "lint-staged": "^4.0.2",
+    "jest": "^21.2.1",
+    "lint-staged": "^6.0.0",
     "xo": "^0.18.2"
   },
   "files": [
