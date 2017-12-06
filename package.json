@@ -25,8 +25,7 @@
   "dependencies": {
     "cheerio": "0.22.0",
     "get-stdin": "^5.0.0",
-    "meow": "^4.0.0",
-    "update-notifier": "^2.2.0"
+    "meow": "^4.0.0"
   },
   "devDependencies": {
     "execa": "^0.8.0",
