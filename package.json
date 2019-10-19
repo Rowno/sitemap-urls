@@ -20,7 +20,7 @@
     "precommit": "lint-staged"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=8"
   },
   "dependencies": {
     "cheerio": "0.22.0",
