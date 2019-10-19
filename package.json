@@ -3,7 +3,12 @@
   "version": "3.0.0",
   "description": "Extract URLs from an XML sitemap.",
   "author": "Roland Warmerdam (https://roland.codes)",
-  "keywords": ["sitemap", "url", "parse", "extract"],
+  "keywords": [
+    "sitemap",
+    "url",
+    "parse",
+    "extract"
+  ],
   "repository": "Rowno/sitemap-urls",
   "license": "MIT",
   "main": "lib/index.js",
@@ -26,20 +31,24 @@
     "eslint-config-prettier": "^2.9.0",
     "execa": "^0.8.0",
     "husky": "^0.14.3",
-    "jest": "^21.2.1",
+    "jest": "^24.9.0",
     "lint-staged": "^6.0.0",
     "prettier": "^1.9.1",
     "xo": "^0.18.2"
   },
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "xo": {
-    "space": true,
-    "semicolon": false,
-    "extends": ["prettier"],
+    "extends": [
+      "prettier"
+    ],
     "overrides": [
       {
         "files": "**/__tests__/**/*.js",
-        "envs": ["jest"]
+        "envs": [
+          "jest"
+        ]
       }
     ]
   },
@@ -48,7 +57,18 @@
     "singleQuote": true
   },
   "lint-staged": {
-    "*.js": ["xo --fix", "prettier --write", "git add"],
-    "*.json": ["prettier --write", "git add"]
+    "*.js": [
+      "xo --fix",
+      "prettier --write",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.md": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }

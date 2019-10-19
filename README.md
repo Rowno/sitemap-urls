@@ -7,11 +7,10 @@ Extract URLs from an XML sitemap.
 
 ![Sitemap Urls screenshot](screenshot.png)
 
-
-Getting Started
----------------
+## Getting Started
 
 Install the Sitemap Urls command line tool:
+
 ```bash
 npm install -g sitemap-urls
 # or
@@ -19,18 +18,18 @@ yarn add -g sitemap-urls
 ```
 
 Run `sitemap-urls` on a file containing a sitemap:
+
 ```bash
 sitemap-urls sitemap.xml
 ```
 
 Also supports piping:
+
 ```bash
 curl http://example.com/sitemap.xml | sitemap-urls
 ```
 
-
-Usage
------
+## Usage
 
 ### CLI
 
@@ -46,34 +45,26 @@ Options:
     -v, --version   Print sitemap-urls' version.
 ```
 
-
 ### API
 
 #### `.extractUrls(string xml)` -> `array`
+
 Extracts URLs from a string containing an XML sitemap.
 
 Example result:
-```json
-[
-    "http://example.com/",
-    "http://example.com/test/"
-]
 
+```json
+["http://example.com/", "http://example.com/test/"]
 ```
 
+## Related
 
-Related
--------
+- [medic][] - Perform bulk URL status checks and track changes.
 
- - [medic][] - Perform bulk URL status checks and track changes.
+## License
 
-
-License
--------
 Sitemap Urls is released under the MIT license.
 
 Copyright © 2015 Roland Warmerdam.
-
-
 
 [medic]: https://github.com/Rowno/medic
