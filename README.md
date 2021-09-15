@@ -3,9 +3,16 @@
 [![Build Status](https://api.travis-ci.org/Rowno/sitemap-urls.svg?branch=master)](https://travis-ci.org/Rowno/sitemap-urls)
 [![Dependency Status](https://david-dm.org/Rowno/sitemap-urls/status.svg)](https://david-dm.org/Rowno/sitemap-urls)
 
-Extract URLs from an XML sitemap.
+Extract URLs Recersively from an XML sitemap.
 
 ![Sitemap Urls screenshot](screenshot.png)
+
+## Features
+
+- Variant Input like, File, URL, Piping
+- Recursive extracting
+- Save output to file
+- Duplicate entry remove
 
 ## Getting Started
 
@@ -17,7 +24,13 @@ npm install -g sitemap-urls
 yarn add -g sitemap-urls
 ```
 
-Run `sitemap-urls` on a file containing a sitemap:
+Run `sitemap-urls` with a sitemap URL:
+
+```bash
+sitemap-urls -r https://example.com
+```
+
+also support file
 
 ```bash
 sitemap-urls sitemap.xml
@@ -37,19 +50,30 @@ curl http://example.com/sitemap.xml | sitemap-urls
 Usage: sitemap-urls <path> [<options>]
 
 Path:
-    Path to a file containing an XML sitemap.
+    Path to a file containing an XML sitemap OR URL.
     This parameter is ignored when the sitemap is being piped.
 
 Options:
-    -h, --help      Show this help text.
-    -v, --version   Print sitemap-urls' version.
+    -r, --recursive      Recursively fetch and extract urls
+    -o, --output         Save output result to a file
+    -d, --duplicate      Remove duplicate entry
+    -h, --help           Show this help text.
+    -v, --version        Print sitemap-urls' version.
 ```
 
 ### API
 
-#### `.extractUrls(string xml)` -> `array`
+```javascript
+main(
+    isRecursive: boolean,
+    filename: boolean,
+    sitemapContent: string,
+    isDuplicate: boolean,
+    baseURL: string
+  }) -> array
+```
 
-Extracts URLs from a string containing an XML sitemap.
+Extracts URLs Recersively from a string containing an XML sitemap OR URL.
 
 Example result:
 
