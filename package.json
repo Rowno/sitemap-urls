@@ -1,8 +1,19 @@
 {
   "name": "sitemap-urls",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Extract URLs from an XML sitemap.",
   "author": "Roland Warmerdam (https://roland.codes)",
+  "contributors": [
+    {
+      "name": "Roland Warmerdam",
+      "email": "hi@roland.codes",
+      "url": "https://roland.codes"
+    },
+    {
+      "name": "Dariush vesal",
+      "email": "dariush.vesal@gmail.com"
+    }
+  ],
   "keywords": [
     "sitemap",
     "url",
@@ -23,6 +34,7 @@
     "node": ">=8"
   },
   "dependencies": {
+    "axios": "^0.21.4",
     "cheerio": "0.22.0",
     "get-stdin": "^5.0.0",
     "meow": "^4.0.0"

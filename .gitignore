@@ -1,2 +1,7 @@
 /node_modules/
 /coverage/
+
+*.tgz
+*.xml
+*.txt
+*.csv
